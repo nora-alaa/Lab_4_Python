@@ -2,6 +2,8 @@ from schema.Car import Car
 from schema.Person import Person
 import re
 
+regexEmail = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+
 class Employee(Person):
     def __init__(self, id, car, email, salary, distancetowork, name, money, mood, healthrate):
         super().__init__(name, money, mood, healthrate)
@@ -31,7 +33,6 @@ class Employee(Person):
 
     @email.setter
     def email(self, email):
-        regexEmail = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
         if re.fullmatch(regexEmail, email):
             self.__email = email
         else:
@@ -71,4 +72,13 @@ class Employee(Person):
         self.car.fuelrate += gasAmount
 
     def send_mail(self, to, subject, msg, receiver_name):
-        pass
+        if re.fullmatch(regexEmail, to):
+            with open(f"{subject}_to_{to}.txt", 'w') as email:
+                message = f"From: {self.email}\n" \
+                          f"To: {to}\n" \
+                          f"Subject: {subject}\n" \
+                          f"" \
+                          f"Hi,{receiver_name}\n" \
+                          f"{msg}\n" \
+                          f"Thanks"
+                email.write(message)

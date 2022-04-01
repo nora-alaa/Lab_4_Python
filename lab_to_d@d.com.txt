@@ -1,0 +1,6 @@
+From: n@n.com
+To: d@d.com
+Subject: lab
+Hi,Mohamed
+This isan emailtamplate 
+Thanks
