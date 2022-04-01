@@ -18,7 +18,7 @@ class Person:
 
     @property
     def healthrate(self):
-        return self.__healthrate()
+        return self.__healthrate
 
     @healthrate.setter
     def healthrate(self, healthrate):
@@ -31,7 +31,7 @@ class Person:
 
     @property
     def mood(self):
-        return self.mood()
+        return self.mood
 
     @mood.setter
     def mood(self, mood):

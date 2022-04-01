@@ -6,7 +6,7 @@ class Car:
 
     @property
     def fuelrate(self):
-        return self.__fuelrate()
+        return self.__fuelrate
 
     @fuelrate.setter
     def fuelrate(self, fuelrate):
@@ -18,7 +18,7 @@ class Car:
 
     @property
     def velocity(self):
-        return self.__velocity()
+        return self.__velocity
 
     @velocity.setter
     def velocity(self, velocity):

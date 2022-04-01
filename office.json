@@ -1,0 +1,60 @@
+{
+    "office": [
+        {
+            "tel": [
+                {
+                    "name": "bbbaa",
+                    "_Car__fuelrate": 100,
+                    "_Car__velocity": 90,
+                    "money": 6000,
+                    "_Person__mood": "happy",
+                    "_Person__healthrate": 50,
+                    "id": 4,
+                    "_Employee__email": "dbb@sbds.com",
+                    "_Employee__salary": 4000,
+                    "distancetowork": 60
+                },
+                {
+                    "name": "dossaa",
+                    "_Car__fuelrate": 50,
+                    "_Car__velocity": 50,
+                    "money": 6000,
+                    "_Person__mood": "happy",
+                    "_Person__healthrate": 50,
+                    "id": 3,
+                    "_Employee__email": "d@sds.com",
+                    "_Employee__salary": 4000,
+                    "distancetowork": 60
+                }
+            ]
+        },
+        {
+            "iti": [
+                {
+                    "name": "nora",
+                    "_Car__fuelrate": 50,
+                    "_Car__velocity": 50,
+                    "money": 5000,
+                    "_Person__mood": "tired",
+                    "_Person__healthrate": 50,
+                    "id": 1,
+                    "_Employee__email": "n@n.com",
+                    "_Employee__salary": 3000,
+                    "distancetowork": 20
+                },
+                {
+                    "name": "doaa",
+                    "_Car__fuelrate": 30,
+                    "_Car__velocity": 10,
+                    "money": 6000,
+                    "_Person__mood": "happy",
+                    "_Person__healthrate": 50,
+                    "id": 2,
+                    "_Employee__email": "d@d.com",
+                    "_Employee__salary": 4000,
+                    "distancetowork": 60
+                }
+            ]
+        }
+    ]
+}
