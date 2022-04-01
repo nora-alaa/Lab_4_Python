@@ -1,3 +1,13 @@
+personMode = ("happy", "tired", "lazy")
+
+
+def containsMood(val):
+    for pMood in personMode:
+        if val == pMood:
+            return True
+    return False
+
+
 class Person:
 
     def __init__(self, name, money, mood, healthrate):
@@ -11,11 +21,26 @@ class Person:
         return self.__healthrate()
 
     @healthrate.setter
-    def healthrate(self,healthrate):
+    def healthrate(self, healthrate):
         if 0 <= healthrate <= 100:
             self.__healthrate = healthrate
         else:
+            print("must be between 0 and 100 so healthrate will be 0 by default")
+
             self.__healthrate = 0
+
+    @property
+    def mood(self):
+        return self.mood()
+
+    @mood.setter
+    def mood(self, mood):
+        if containsMood(mood):
+            self.__mood = mood
+        else:
+            print("must be in (happy, tired, lazy) so mood will be null by default")
+
+            self.__mood = None
 
     def sleep(self, hours: int):
         if hours == 7:
@@ -47,10 +72,10 @@ class Person:
 
     def buy(self, items: int):
         if isinstance(items, int):
-            self.money -= 10*items
+            self.money -= 10 * items
             return True
         elif items.isdigit():
-            self.money -= 10*int(items)
+            self.money -= 10 * int(items)
             return True
         else:
             return False
