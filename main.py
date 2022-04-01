@@ -23,8 +23,7 @@ tel = Office("tel", emps2)
 iti.hire(emp3)
 iti.fire(3)
 
-emp1.send_mail("d@d.com","lab","This isan emailtamplate ","Mohamed")
-emp4.send_mail("ff@ff.com","lab4","hi hello ","nora")
+emp1.send_mail("d@d.com", "lab", "This isan emailtamplate ", "Mohamed")
+emp4.send_mail("ff@ff.com", "lab4", "hi hello ", "nora")
 
-
-print(Office.employeesNum)
+print(f"employeesNum at all office: {Office.employeesNum}")
